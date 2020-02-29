@@ -414,15 +414,13 @@ main {
   height: auto;
   height: 100% !important;
   border-radius: 13px;
+  border: none;
   border: solid 1.5px rgba(235, 235, 235, 0.45);
   & .card-header {
-    //height: 7.6rem;
-    padding: 2rem 2.6rem;
-    //padding-right: 2.6rem;
+    padding: 2rem 2.6rem;;
     border-bottom: solid 1.3px rgba(235, 235, 235, 0.45);
    border-top-left-radius: 13px;
    border-top-right-radius: 13px;
-    //border-bottom: none;
 
     & span {
       margin-left: 0.2rem;
