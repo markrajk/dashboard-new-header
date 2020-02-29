@@ -58,7 +58,7 @@ header {
     padding-bottom: 0.5rem !important;
     font-family: "Heebo-Bold";
     background-color: #fdfdfd !important;
-    border-bottom: 1px solid #e4e4e4; }
+    border-bottom: 1px solid #E4E4E4; }
     header .navbar a, header .navbar span {
       color: #000 !important; }
     header .navbar-left {
@@ -77,7 +77,7 @@ header {
     padding: 0;
     padding-top: 4rem;
     display: flex;
-    border-bottom: 1.75px solid #e4e4e4; }
+    border-bottom: 1.75px solid #E4E4E4; }
     header .header-links ul {
       padding: 0;
       margin: 0;
@@ -148,8 +148,8 @@ main {
   height: 34rem;
   width: 100%;
   padding-bottom: 3rem;
-  border-radius: 4px;
-  border: solid 1.5px #eaebee; }
+  border-radius: 13px;
+  border: solid 1.5px rgba(235, 235, 235, 0.45); }
   .graph-card-1 {
     grid-area: card1; }
   .graph-card-2 {
@@ -169,7 +169,8 @@ main {
       margin-bottom: .8rem;
       font-family: "Heebo-Medium";
       font-size: 1.2rem;
-      color: #88888c; }
+      color: #88888c;
+      letter-spacing: .24px; }
   .graph-card-body {
     display: flex;
     justify-content: space-between;
@@ -213,13 +214,14 @@ main {
   font-family: "Lato";
   grid-area: card4;
   height: auto;
-  height: 100% !important; }
+  height: 100% !important;
+  border-radius: 13px;
+  border: solid 1.5px rgba(235, 235, 235, 0.45); }
   .people .card-header {
     padding: 2rem 2.6rem;
-    border: 1.5px solid #eaebee;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom: none; }
+    border-bottom: solid 1.3px rgba(235, 235, 235, 0.45);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px; }
     .people .card-header span {
       margin-left: 0.2rem;
       font-weight: normal; }
@@ -232,7 +234,8 @@ main {
       margin-bottom: .8rem;
       font-family: "Heebo-Medium";
       font-size: 1.2rem;
-      color: #88888c; }
+      color: #88888c;
+      letter-spacing: .24px; }
     .people .card-header .add-btn {
       align-self: center;
       display: inline-block;
@@ -268,9 +271,8 @@ main {
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
-    border: 1.5px solid #eaebee;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px; }
     .people .list-group-flush::-webkit-scrollbar {
       display: none;
       /* Safari and Chrome */ }
@@ -278,9 +280,13 @@ main {
     position: relative;
     padding: 0.9rem 2.6rem;
     font-size: 1.3rem;
-    color: #354052; }
+    color: #354052;
+    border: none; }
+    .people .list-group-item:not(:last-of-type) {
+      border-bottom: solid 1.14px rgba(234, 235, 238, 0.67); }
     .people .list-group-item.active {
       border-color: #eaebee;
+      border-top: solid 1.14px rgba(234, 235, 238, 0.67);
       background-color: #f4faff; }
       .people .list-group-item.active .active-link p {
         font-weight: 600;
@@ -321,14 +327,13 @@ main {
 .overview {
   padding: 2rem;
   padding-bottom: 0;
-  border: solid 1.5px #eaebee;
-  border-radius: 4px;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 13px;
+  border: solid 1.5px rgba(235, 235, 235, 0.45); }
   .overview .graph-card {
     height: 50%;
     padding: none;
-    border: none;
-    border-bottom: solid 1.5px #eaebee; }
+    border: none; }
     .overview .graph-card-header {
       padding: 0;
       padding-bottom: 1.8rem; }
@@ -352,7 +357,8 @@ main {
       padding: 0 1.2rem;
       padding-top: 2.4rem;
       padding-bottom: 3rem;
-      border-bottom: solid 1.5px #eaebee; }
+      border-top: solid 1.25px #F1F1F3;
+      border-bottom: solid 1.25px #F1F1F3; }
       .overview-bottom-top h3 {
         margin: 0;
         font-family: "Heebo-Bold";
@@ -378,7 +384,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: solid 1.5px #eaebee; }
+      border-bottom: solid 1.25px #F1F1F3; }
       .overview-bottom-6 p, .overview-bottom-12 p {
         font-family: "Heebo-Bold";
         font-size: 1.4rem; }
