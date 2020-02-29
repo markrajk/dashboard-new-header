@@ -207,6 +207,7 @@ header {
       font-size: 2.2rem;
 
       & img {
+        margin-top: -.1rem;
         width: 2.7rem;
         height: 2.7rem;
         border-radius: 50%;
@@ -345,6 +346,7 @@ main {
 
     & h3 {
         margin: 0;
+        margin-top: -.1rem;
         white-space: nowrap;
         font-family: "Heebo-Bold";
         font-size: 2.3rem;
@@ -353,11 +355,12 @@ main {
     }
 
     & h4 {
+        margin-top: .1rem;
         margin-bottom: .8rem;
-      font-family: "Heebo-Medium";
-      font-size: 1.2rem;
-      color: #88888c;
-      letter-spacing: .24px;
+        font-family: "Heebo-Medium";
+        font-size: 1.16rem;
+        color: #88888c;
+        letter-spacing: .24px;
     }
   }
 
@@ -367,7 +370,7 @@ main {
     min-height: calc(100% - 9.9rem);
     padding-left: 4.4rem;
     padding-right: 4.4rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 4.2rem;
 
     & .bar {
       position: relative;
@@ -438,6 +441,7 @@ main {
 
     & h3 {
       margin: 0;
+      margin-top: -.1rem;
       font-family: "Heebo-Bold";
       font-size: 2.3rem;
       color: #000;
@@ -445,9 +449,10 @@ main {
     }
 
     & h4 {
+        margin-top: .1rem;
         margin-bottom: .8rem;
         font-family: "Heebo-Medium";
-        font-size: 1.2rem;
+        font-size: 1.16rem;
         color: #88888c;
         letter-spacing: .24px;
     }
@@ -531,6 +536,7 @@ main {
       }
     }
     & img {
+        
       width: 2.7rem;
       height: 2.7rem;
     }
@@ -597,9 +603,13 @@ main {
       padding-bottom: 3rem;
     }
 
+    & h3 {
+        margin-top: -.15rem;
+    }
+
     & .options {
         margin: 0;
-        margin-top: -.2rem;
+        margin-top: -.1rem;
         font-family: "Heebo-Regular";
 
         margin-bottom: .6rem;
