@@ -375,7 +375,8 @@ main {
     padding-bottom: 1.8rem; }
     .overview-bottom-top {
       display: flex;
-      padding: 0 1.4rem;
+      padding: 0 1.6rem;
+      margin: 0 .4rem;
       padding-top: 2.4rem;
       padding-bottom: 3rem;
       border-top: solid 1.25px #f1f1f3;
@@ -407,7 +408,8 @@ main {
           .overview-bottom-top p span.minus {
             background-color: #fb2133; }
     .overview-bottom-6, .overview-bottom-12 {
-      padding: 1.7rem 1.4rem;
+      padding: 1.7rem 1.6rem;
+      margin: 0 .4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -419,7 +421,7 @@ main {
         .overview-bottom-6 p span, .overview-bottom-12 p span {
           display: block;
           font-family: "Heebo-Regular";
-          font-size: 1.3rem;
+          font-size: 1.2rem;
           color: #8a8a8e; }
       .overview-bottom-6 a, .overview-bottom-12 a {
         text-decoration: none;
@@ -432,9 +434,9 @@ main {
         border-radius: 17px;
         background-color: #efeff4; }
     .overview-bottom-text {
-      margin-left: .7rem;
+      margin-left: 1rem;
       display: inline-block;
-      padding-top: 1.4rem;
+      padding-top: 1.2rem;
       font-family: "Heebo-Regular";
       font-size: 1.2rem;
       color: #777779; }
