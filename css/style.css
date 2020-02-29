@@ -138,7 +138,7 @@ main {
   grid-gap: 3.2rem;
   grid-template-areas: "card1 card2 card3" "card4 card4 card5";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 34rem 67rem;
+  grid-template-rows: 34rem 68rem;
   min-width: 100rem !important; }
   @media (max-width: 1800px) {
     .section-top {
@@ -167,7 +167,7 @@ main {
     grid-area: card3; }
   .graph-card-header {
     padding: 2rem;
-    padding-bottom: 1.6rem; }
+    padding-bottom: 1.8rem; }
     .graph-card-header h3 {
       margin: 0;
       margin-top: -.1rem;
