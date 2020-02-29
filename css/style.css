@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "HankRnd-Light";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Light.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Light.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Light.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Light.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Regular";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Regular.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Regular.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Regular.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Regular.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Bold";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Bold.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Bold.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Bold.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Bold.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "HankRnd-Black";
+  src: url("../fonts/Hank Rnd/EOT/HankRnd-Black.eot");
+  src: url("../fonts/Hank Rnd/OTF/HankRnd-Black.otf") format("otf"), url("../fonts/Hank Rnd/WOFF2/HankRnd-Black.woff2") format("woff2"), url("../fonts/Hank Rnd/WOFF/HankRnd-Black.woff") format("woff"), url("../fonts/Hank Rnd/TTF/HankRnd-Black.ttf") format("truetype"); }
+@font-face {
+  @font-face {
+    font-family: "Heebo-Thin";
+    src: url("../fonts/Heebo/Heebo-Thin.ttf") format("truetype"); }
+  @font-face {
+    font-family: "Heebo-Light";
+    src: url("../fonts/Heebo/Heebo-Light.ttf") format("truetype"); }
+  font-family: "Heebo-Regular";
+  src: url("../fonts/Heebo/Heebo-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Heebo-Medium";
+  src: url("../fonts/Heebo/Heebo-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Heebo-Bold";
+  src: url("../fonts/Heebo/Heebo-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Heebo-ExtraBold";
+  src: url("../fonts/Heebo/Heebo-ExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Heebo-Black";
+  src: url("../fonts/Heebo/Heebo-Black.ttf") format("truetype"); }
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1800px) {
+    html {
+      font-size: 58%; } }
+  @media (max-width: 1500px) {
+    html {
+      font-size: 53%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 48%; } }
+
+body {
+  font-family: "HankRnd-Regular"; }
+
+.p-default {
+  padding-left: 12rem !important;
+  padding-right: 12rem !important; }
+  @media (max-width: 1199px) {
+    .p-default {
+      padding-left: 10rem !important;
+      padding-right: 10rem !important; } }
+  @media (max-width: 991px) {
+    .p-default {
+      padding-left: 7rem !important;
+      padding-right: 7rem !important; } }
+  @media (max-width: 767px) {
+    .p-default {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important; } }
+
+header {
+  z-index: 10000; }
+  header .navbar {
+    padding-top: 1rem !important;
+    padding-bottom: .5rem !important;
+    font-family: "Heebo-Bold";
+    background-color: #fdfdfd !important;
+    border-bottom: 1px solid #E4E4E4; }
+    header .navbar a, header .navbar span {
+      color: #000 !important; }
+    header .navbar-left {
+      font-size: 1.35rem; }
+    header .navbar-center {
+      font-size: 2.2rem; }
+      header .navbar-center img {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%; }
+    header .navbar-right {
+      font-size: 1.3rem; }
+  header .header-links {
+    background-color: #fdfdfd !important;
+    padding: 0;
+    padding-top: 4rem;
+    display: flex;
+    border-bottom: 1.75px solid #E4E4E4; }
+    header .header-links ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      list-style: none; }
+      header .header-links ul li {
+        padding-bottom: 1.2rem;
+        margin-right: 2.6rem; }
+        header .header-links ul li a {
+          white-space: nowrap;
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: #8f8fa2; }
+        header .header-links ul li.active {
+          position: relative; }
+          header .header-links ul li.active::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1.75px;
+            width: 120%;
+            transform: translate(-10%, 100%);
+            background-color: #fd2851; }
+    header .header-links-btn, header .header-links-btn:hover {
+      text-decoration: none;
+      white-space: nowrap;
+      height: 2.8rem;
+      display: block;
+      margin-left: auto;
+      padding: .3rem 1rem;
+      font-size: 1.35rem;
+      color: #FFF;
+      border-radius: 14px;
+      background-color: #fd2851; }
