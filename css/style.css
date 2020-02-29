@@ -84,8 +84,11 @@ header {
       display: flex;
       list-style: none; }
       header .header-links ul li {
+        padding-left: .6rem;
+        padding-right: .6rem;
         padding-bottom: 1.2rem;
-        margin-right: 2.6rem; }
+        margin-right: 2.2rem;
+        text-align: center; }
         header .header-links ul li a {
           white-space: nowrap;
           text-decoration: none;
@@ -103,8 +106,8 @@ header {
             bottom: 0;
             left: 0;
             height: 1.75px;
-            width: 120%;
-            transform: translate(-10%, 100%);
+            width: 100%;
+            transform: translate(0, 100%);
             background-color: #fd2851; }
     header .header-links-btn, header .header-links-btn:hover {
       margin-top: -.5rem;

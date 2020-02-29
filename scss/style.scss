@@ -231,8 +231,11 @@ header {
       list-style: none;
 
       & li {
+          padding-left: .6rem;
+          padding-right: .6rem;
         padding-bottom: 1.2rem;
-        margin-right: 2.6rem;
+        margin-right: 2.2rem;
+        text-align: center;
         & a {
           white-space: nowrap;
           text-decoration: none;
@@ -254,9 +257,9 @@ header {
             bottom: 0;
             left: 0;
             height: 1.75px;
-            width: 120%;
+            width: 100%;
 
-            transform: translate(-10%, 100%);
+            transform: translate(0, 100%);
             background-color: #fd2851;
           }
         }
