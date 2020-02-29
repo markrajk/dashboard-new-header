@@ -210,6 +210,7 @@ main {
         transform: translate(-15%, 100%); }
 
 .people {
+  font-family: "Lato";
   grid-area: card4;
   height: auto;
   height: 100% !important; }
@@ -282,7 +283,6 @@ main {
       border-color: #eaebee;
       background-color: #f4faff; }
       .people .list-group-item.active .active-link p {
-        font-family: "Open-Sans" sans-serif;
         font-weight: 600;
         font-size: 1.35rem;
         margin-bottom: 0 !important;

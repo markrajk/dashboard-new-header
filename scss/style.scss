@@ -410,6 +410,7 @@ main {
 }
 
 .people {
+    font-family: 'Lato', ;
   grid-area: card4;
   height: auto;
   height: 100% !important;
@@ -503,8 +504,8 @@ main {
       background-color: #f4faff;
 
       & .active-link p {
-          font-family: "Open-Sans" sans-serif;
-          font-weight: 600;
+        //font-family: "Open Sans", sans-serif;
+        font-weight: 600;
         font-size: 1.35rem;
         margin-bottom: 0 !important;
         margin-right: 2px;
