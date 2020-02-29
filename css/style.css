@@ -160,9 +160,11 @@ main {
     padding: 2rem;
     padding-bottom: 1.6rem; }
     .graph-card-header h3 {
+      margin: 0;
       white-space: nowrap;
       font-family: "Heebo-Bold";
       font-size: 2.5rem;
+      line-height: 2.8rem;
       color: #000; }
     .graph-card-header h4 {
       margin-bottom: .8rem;
@@ -227,7 +229,8 @@ main {
       margin: 0;
       font-family: "Heebo-Bold";
       font-size: 2.5rem;
-      color: #000; }
+      color: #000;
+      line-height: 2.8rem; }
     .people .card-header h4 {
       margin-bottom: .8rem;
       font-family: "Heebo-Medium";

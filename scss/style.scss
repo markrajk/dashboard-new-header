@@ -336,9 +336,11 @@ main {
     padding-bottom: 1.6rem;
 
     & h3 {
+        margin: 0;
         white-space: nowrap;
         font-family: "Heebo-Bold";
         font-size: 2.5rem;
+        line-height: 2.8rem;
         color: #000;
     }
 
@@ -431,6 +433,7 @@ main {
       font-family: "Heebo-Bold";
       font-size: 2.5rem;
       color: #000;
+      line-height: 2.8rem;
     }
 
     & h4 {
