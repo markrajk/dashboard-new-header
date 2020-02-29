@@ -303,6 +303,10 @@ main {
   grid-template-rows: 34rem 67rem;
   min-width:100rem!important;
 
+  @include respond(desktop-xxl) {
+    grid-gap: 2.9rem;
+  }
+
   @include respond(desktop-xl) {
     grid-gap: 2.6rem;
   }
@@ -461,7 +465,7 @@ main {
       &::before {
         content: "";
         position: absolute;
-        width: 12px;
+        width: 14px;
         height: 2px;
         background-color: #0087ff;
         top: 50%;
@@ -473,7 +477,7 @@ main {
         content: "";
         position: absolute;
         width: 2px;
-        height: 12px;
+        height: 14px;
         background-color: #0087ff;
         top: 50%;
         left: 50%;
@@ -889,12 +893,12 @@ main {
   }
 
   @include respond(desktop-md) {
-    padding-left: 7rem !important;
-    padding-right: 7rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 
   @include respond(desktop-sm) {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
 }
