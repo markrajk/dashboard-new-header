@@ -432,8 +432,8 @@ main {
     font-weight: bold; }
 
 .p-default {
-  padding-left: 19rem !important;
-  padding-right: 19rem !important; }
+  padding-left: 30rem !important;
+  padding-right: 30rem !important; }
   @media (max-width: 1800px) {
     .p-default {
       padding-left: 17rem !important;
