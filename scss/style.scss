@@ -242,7 +242,7 @@ header {
         & a {
           white-space: nowrap;
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 1.45rem;
           color: #8f8fa2;
         }
 
@@ -276,11 +276,11 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
-      height: 2.4rem;
+      height: 2.6rem;
       display: block;
       margin-left: auto;
-      padding: 0.5rem 1.2rem;
-      font-size: 1.1rem;
+      padding: 0.5rem 1.4rem;
+      font-size: 1.2rem;
       color: #fff;
       border-radius: 14px;
       background-color: #fd2851;
@@ -343,7 +343,7 @@ main {
 
   &-header {
     padding: 2rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 1.6rem;
 
     & h3 {
         margin: 0;
@@ -558,7 +558,7 @@ main {
     }
 
     & .btn-custom {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       text-decoration: none;
       display: inline-block;
       width: 8rem;
@@ -633,7 +633,7 @@ main {
       padding-bottom: 3rem;
       border-top: solid 1.25px #F1F1F3;
       border-bottom: solid 1.25px #F1F1F3;
-      justify-content: center;
+      justify-content: space-between;
 
       &-first {
           margin-right: 13%;
@@ -648,15 +648,16 @@ main {
 
       & p {
           white-space: nowrap;
+          
             margin: 0;
             font-family: "Heebo-Medium";
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: #7b7986;
 
         & span {
             margin-left: 5%;
             font-family: "Heebo-Bold";
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #fff;
             padding: 0.3rem 1rem;
             border-radius: 2.2rem;
