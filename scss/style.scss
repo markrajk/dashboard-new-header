@@ -131,17 +131,15 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
     url("../fonts/Hank\ Rnd/WOFF/HankRnd-Black.woff") format("woff"),
     url("../fonts/Hank\ Rnd/TTF/HankRnd-Black.ttf") format("truetype");
 }
-
 @font-face {
-  @font-face {
-    font-family: "Heebo-Thin";
-    src: url("../fonts/Heebo/Heebo-Thin.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Heebo-Light";
-    src: url("../fonts/Heebo/Heebo-Light.ttf") format("truetype");
-  }
-
+  font-family: "Heebo-Thin";
+  src: url("../fonts/Heebo/Heebo-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Heebo-Light";
+  src: url("../fonts/Heebo/Heebo-Light.ttf") format("truetype");
+}
+@font-face {
   font-family: "Heebo-Regular";
   src: url("../fonts/Heebo/Heebo-Regular.ttf") format("truetype");
 }
@@ -183,119 +181,249 @@ html {
 }
 
 body {
-  font-family: "HankRnd-Regular";
+  min-width: 600px;
+}
+header {
+  font-family: "Heebo-Bold";
+  z-index: 10000;
+  .navbar {
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    font-family: "Heebo-Bold";
+    background-color: #fdfdfd !important;
+    border-bottom: 1px solid #e4e4e4;
+
+    & a,
+    & span {
+      color: #000 !important;
+    }
+
+    &-left {
+      font-size: 1.35rem;
+    }
+
+    &-center {
+      font-size: 2.2rem;
+
+      & img {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+      }
+    }
+
+    &-right {
+      font-size: 1.3rem;
+    }
+  }
+
+  .header-links {
+    font-family: "Heebo-Regular";
+    background-color: #fdfdfd !important;
+    padding: 0;
+    padding-top: 4rem;
+    display: flex;
+    border-bottom: 1.75px solid #e4e4e4;
+    & ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      list-style: none;
+
+      & li {
+        padding-bottom: 1.2rem;
+        margin-right: 2.6rem;
+        & a {
+          white-space: nowrap;
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: #8f8fa2;
+        }
+
+        &.active {
+          font-family: "Heebo-Bold";
+          position: relative;
+
+          & a {
+            color: #343441;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1.75px;
+            width: 120%;
+
+            transform: translate(-10%, 100%);
+            background-color: #fd2851;
+          }
+        }
+      }
+    }
+
+    &-btn,
+    &-btn:hover {
+      font-family: "Heebo-Bold";
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      height: 2.8rem;
+      display: block;
+      margin-left: auto;
+      padding: 0.5rem 1.2rem;
+      font-size: 1.35rem;
+      color: #fff;
+      border-radius: 14px;
+      background-color: #fd2851;
+    }
+  }
+}
+
+main {
+  margin-top: 14rem;
+}
+
+.section-graph-cards {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.graph-card {
+     height: 34rem;
+     min-width: 36rem;
+     width: 100%;
+  max-width: 30%;
+  padding-bottom: 3rem;
+  border-radius: 4px;
+  border: solid 1.5px #eaebee;
+
+  &-header {
+    padding: 2.6rem;
+    padding-bottom: 1.6rem;
+
+    & h3 {
+      font-family: "Heebo-Bold";
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000;
+    }
+
+    & h4 {
+      font-family: "Heebo-Regular";
+      font-size: 1.2rem;
+      color: #88888c;
+    }
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(100% - 9.9rem);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+
+    & .bar {
+      position: relative;
+      padding-bottom: 4rem;
+      width: 16px;
+      height: auto;
+      border-radius: 8px;
+      background-color: rgba($color: #c1c0c8, $alpha: 0.24);
+
+      &:first-child {
+        @include respond(desktop-lgxl) {
+          display: none !important;
+        }
+      }
+
+      &-fill {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-radius: 8px;
+
+        &-green {
+          background: $green-gradient;
+        }
+
+        &-orange {
+          background: $orange-gradient;
+        }
+
+        &-red {
+          background: $red-gradient;
+        }
+      }
+
+      &-info {
+        font-family: "HankRnd-Bold";
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        bottom: -7%;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #6f6e77;
+        transform: translate(-15%, 100%);
+        // @include respond(desktop-lg) {
+        //   font-size: 1rem;
+        // }
+
+        //   @include respond(desktop-md) {
+        //     font-size: 1rem;
+        //   }
+
+        //   @include respond(desktop-sm) {
+        //     font-size: 1.2rem;
+        //   }
+      }
+    }
+  }
 }
 
 // UTILITIES
-.p-default {
-    padding-left: 12rem!important;
-    padding-right: 12rem!important;
 
-    @include respond(desktop-lg) {
-        padding-left: 10rem!important;
-        padding-right: 10rem!important;
-    }
+.options {
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+  margin-right: auto;
+  font-size: 1.45rem;
+  font-weight: normal;
+  & a {
+    color: #878590;
 
-    @include respond(desktop-md) {
-        padding-left: 7rem!important;
-        padding-right: 7rem!important;
+    &.active {
+      font-weight: bold;
+      color: #1a173b;
     }
+  }
 
-    @include respond(desktop-sm) {
-        padding-left: 2rem!important;
-        padding-right: 2rem!important;
-    }
-
-    @include respond(desktop-xsm) {
-        padding-left: 1rem!important;
-        padding-right: 1rem!important;
-    }
+  & .divider {
+    margin: 0 0.5rem;
+    font-weight: bold;
+  }
 }
-header {
-    z-index: 10000;
-    .navbar {
-        padding-top: 1rem !important;
-        padding-bottom: .5rem !important;
-        font-family: "Heebo-Bold";
-        background-color: #fdfdfd!important;
-        border-bottom: 1px solid #E4E4E4;
-        
-        & a, & span{
-            color: #000!important;
-        }
-    
-        &-left {
-            font-size: 1.35rem;
-        }
-    
-        &-center {
-            font-size: 2.2rem;
-    
-            & img {
-                width: 2.7rem;
-                height: 2.7rem;
-                border-radius: 50%;
-            }
-        }
-    
-        &-right {
-            font-size: 1.3rem;
-        }
-    }
-    
-    .header-links {
-        background-color: #fdfdfd!important;
-        padding: 0;
-        padding-top: 4rem;
-        display: flex;
-        border-bottom: 1.75px solid #E4E4E4;
-        & ul {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            list-style: none;
-            
-    
-            & li {
-                padding-bottom: 1.2rem;
-                margin-right: 2.6rem;
-                & a {
-                    white-space: nowrap;
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                    color: #8f8fa2;
-                }
-    
-                &.active {
-                    position: relative;
-                    &::after {
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        height: 1.75px;
-                        width: 120%;
-                        transform: translate(-10%, 100%);
-                        background-color: #fd2851;
-                    }
-                }
-            }
-        }
-    
-        &-btn,
-        &-btn:hover {
-        //margin-bottom: .5rem!important;
-        text-decoration: none;
-        white-space: nowrap;
-        height: 2.8rem;
-        display: block;
-        margin-left: auto;
-        padding: .3rem 1rem;
-        font-size: 1.35rem;
-        color: #FFF;
-        border-radius: 14px;
-        background-color: #fd2851;
-        }
-    }
+
+.p-default {
+  padding-left: 12rem !important;
+  padding-right: 12rem !important;
+
+  @include respond(desktop-lg) {
+    padding-left: 10rem !important;
+    padding-right: 10rem !important;
+  }
+
+  @include respond(desktop-md) {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+  }
+
+  @include respond(desktop-sm) {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
 }
