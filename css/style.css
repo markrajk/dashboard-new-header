@@ -163,7 +163,6 @@ main {
       white-space: nowrap;
       font-family: "Heebo-Bold";
       font-size: 2.5rem;
-      font-weight: 700;
       color: #000; }
     .graph-card-header h4 {
       margin-bottom: .8rem;
@@ -206,7 +205,6 @@ main {
         left: 50%;
         bottom: -6%;
         font-size: 1.15rem;
-        font-weight: 700;
         color: #6f6e77;
         transform: translate(-50%, 100%); }
 
@@ -228,7 +226,7 @@ main {
     .people .card-header h3 {
       margin: 0;
       font-family: "Heebo-Bold";
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       color: #000; }
     .people .card-header h4 {
       margin-bottom: .8rem;
@@ -424,7 +422,6 @@ main {
   .options a {
     color: #878590; }
     .options a.active {
-      font-weight: bold;
       color: #1a173b; }
   .options .divider {
     margin: 0 0.5rem;
