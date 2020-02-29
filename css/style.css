@@ -63,7 +63,7 @@ header {
       color: #000 !important; }
     header .navbar-left {
       margin-left: .1rem;
-      font-size: 1.35rem; }
+      font-size: 1.375rem; }
     header .navbar-center {
       font-size: 2.2rem; }
       header .navbar-center img {
@@ -71,14 +71,14 @@ header {
         height: 2.7rem;
         border-radius: 50%; }
     header .navbar-right {
-      font-size: 1.3rem; }
+      font-size: 1.375rem; }
   header .header-links {
     font-family: "Heebo-Regular";
     background-color: #fdfdfd !important;
     padding: 0;
     padding-top: 4rem;
     display: flex;
-    border-bottom: 1.5px solid #E4E4E4; }
+    border-bottom: 1.25px solid #E4E4E4; }
     header .header-links ul {
       padding: 0;
       margin: 0;
@@ -106,7 +106,7 @@ header {
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 1.5px;
+            height: 1.25px;
             width: 100%;
             transform: translate(0, 100%);
             background-color: #fd2851; }
@@ -126,7 +126,7 @@ header {
       background-color: #fd2851; }
 
 main {
-  margin-top: 13.5rem;
+  margin-top: 13rem;
   padding-bottom: 3rem;
   background-color: #f8f9fb; }
 
